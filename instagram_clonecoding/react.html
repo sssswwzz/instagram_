@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+</head>
+<body>
+    <div id="image">
+        <img id="all-img" src="./img/instagramBackground_magic.png" alt="">
+    </div>
+    <div class="login-box">
+        <form id="login-form">
+            <p>Instagram</p>
+            <input type="text" class="login-input" placeholder="전화번호 또는 id입력">
+            </br>
+            <input type="text" class="login-input" placeholder="비밀번호">
+            </br>
+            <button class="login-input" id="loginbtn" onclick="alert('login success')">로그인</button>
+            <div id="left-bar" class="bars"></div>
+            <div id="or">또는</div>
+            <div id="right-bar" class="bars"></div>
+            <a href="https://www.instagram.com/" id="facebook">facebook으로 로그인</a>
+            <a href="" id="forgot-pw">비밀번호를 잊으셨나요?</a>
+            <div id="join">
+                <a id="no-account" class="makepretty" href="">계정이 없으신가요?</a>
+                <a id="join_" class="makepretty" href="">가입하기</a>
+            </div>
+        </form>
+        <p id="download-app">앱을 다운로드 하세요.</p>
+    </div>
+    <footer>
+        <a href="">Meta</a>
+        <a href="">소개</a>
+        <a href="">채용정보</a>
+        <a href="">도움말</a>
+        <a href="">API</a>
+        <a href="">개인정보처리방침</a>
+        <a href="">약관</a>
+        <a href="">인기계정</a>
+        <a href="">해시태그</a>
+        <a href="">위치</a>
+        <a href="">Instagram Lite</a>
+    </footer>
+    <style>
+        body{
+            background-color: #fafafa;
+        }
+        .login-box{
+            position: absolute;
+            width: 350px;
+            height: 400px;
+            background-color: rgb(255, 255, 255);
+            border-width: 1px;
+            border-color: rgb(184, 184, 184);
+            border-style: solid;
+            left: 52%;
+            top: 32%;
+            transform: translateY(-50%);
+        }
+        p{
+            position: relative;
+            text-align: center;
+            font-size: 2.8em;
+        }
+        #login-form{
+            position: relative;
+            text-align: center;
+        }
+        .login-input{
+            font-size:1em;
+            width: 75%;
+            height: 30px;
+            margin-bottom:8px ;
+            background-color: #fafafa;
+            border-color: rgb(184, 184, 184);
+            border-radius: 4px;
+        }
+        #loginbtn{
+            width: 78%;
+            font-size: 1.2em;
+            background-color: #0096f5;
+            color: white;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+        }
+        #or{
+            display: inline-block;
+            color: #828282;
+            margin-left:20px ;
+            margin-right: 20px;
+            font-size: 13px;
+        }
+        .bars{
+            display: inline-block;
+            background-color: rgb(184, 184, 184);
+            height: 1px;
+            width: 25%;
+        }
+        #facebook{
+            display: block;
+            text-decoration: none;
+            color: #385185;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        #facebook:active{
+            opacity: 0.7;
+        }
+        #forgot-pw{
+            font-size: 12px;
+            text-decoration: none;
+            color: black;
+        }
+        #join{
+            width: 350px;
+            height: 50px;
+            background-color: white;
+            margin-top: 20px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(184, 184, 184);
+        }
+        .makepretty{
+            display: inline-block;
+            position: relative;
+            margin-top: 10px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        #join_{
+            color: #0095f6;
+        }
+        #download-app{
+            font-size: 15px;
+        }
+
+        footer{
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        footer>a{
+            position: relative;
+            color: rgb(90, 90, 90);
+            text-decoration: none;
+            padding: 10px;
+            font-size: 9px;
+        }
+        #all-img{
+            position: absolute;
+            left: 20%;
+            top:42%;
+            transform: translateX (-50%);
+            transform: translateY(-50%);
+        }
+        @media (max-width:700px){
+            #all-img{
+                opacity: 0;
+            }
+            .login-box{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+            footer{
+                opacity: 0;
+            }
+        }
+
+    </style>
+</body>
+</html>
